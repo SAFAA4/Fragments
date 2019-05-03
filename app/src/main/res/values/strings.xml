@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="pic_loca">Pick Location</string>
+    <string name="pic_photo">Pick Photo</string>
+    <string name="open">Open Map</string>
+    <string name="openGall">Open Gallery</string>
+</resources>
