@@ -15,7 +15,5 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.add(R.id.fragment,fragment1);
         transaction.commit();
-
-
     }
 }

@@ -9,7 +9,14 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/back1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_arrow_back_black_24dp"
+        />
 
 
     <Button
