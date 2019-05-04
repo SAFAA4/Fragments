@@ -6,4 +6,5 @@
     <string name="pic_photo">Pick Photo</string>
     <string name="open">Open Map</string>
     <string name="openGall">Open Gallery</string>
+    <string name="exit">Exit</string>
 </resources>

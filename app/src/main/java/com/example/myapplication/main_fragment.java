@@ -24,6 +24,7 @@ public class main_fragment extends Fragment {
                 pick_location fragment2 = new pick_location();
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.fragment,fragment2);
+                transaction.addToBackStack("fragmentStack1") ;
                 transaction.commit();
             }
         });
@@ -35,6 +36,7 @@ public class main_fragment extends Fragment {
                 pick_photo fragment3 = new pick_photo();
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.fragment,fragment3);
+                transaction.addToBackStack("fragmentStack1") ;
                 transaction.commit();
             }
         });

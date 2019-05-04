@@ -1,5 +1,4 @@
 package com.example.myapplication;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -12,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import static android.app.Activity.RESULT_OK;
 
 public class pick_photo extends Fragment  {
     private static final int IMAGE_PICK_CODE = 100;
@@ -52,7 +53,7 @@ public class pick_photo extends Fragment  {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if( requestCode == IMAGE_PICK_CODE){
+        if( resultCode == RESULT_OK && requestCode == IMAGE_PICK_CODE){
             imageUri = data.getData();
             imageView.setImageURI(imageUri);
         }
