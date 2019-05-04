@@ -1,8 +1,5 @@
 package com.example.myapplication;
 
-import android.app.Activity;
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -41,6 +38,19 @@ public class main_fragment extends Fragment {
                 transaction.commit();
             }
         });
+
+        Button btnexit = view.findViewById(R.id.exit);
+        btnexit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               getActivity().moveTaskToBack(true);
+               android.os.Process.killProcess(android.os.Process.myPid());
+               System.exit(1);
+
+            }
+        });
+
+
         return view;
     }
 }
